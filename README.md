@@ -1,7 +1,7 @@
-# Featured-Engineering
+## Featured-Engineering
 Example 01
 
-# Exercise 1: Outlier Detection and Removal Using Percentile technique
+### Exercise 1: Outlier Detection and Removal Using Percentile technique
 
 
 
@@ -18,11 +18,9 @@ from matplotlib import pyplot as plt
 dataframe = panda.read_csv("data_set.csv")
 
 
-
 ##### 3: head() function is used to visulize and test the data types inside the object. In short it will help you to know either your data set is valid or not.
 
 dataframe.head()
-
 
 
 ##### 4: "shape" attribute is used to return dimentionality of dataframe in form of tuple, In simple it shows all the rows and columns of the file.
@@ -38,11 +36,9 @@ plt.ylabel('Count')
 plt.show()
 
 
-
 ##### 6: Here comes the tricky part, we need to detect outliers, there are many ways to do that, domain knowlegde is import to detect outliers but if the data is humongous then mostly we use different techniques such as percentile. in the example we have created a veriable "thresold_max" where we will try to detect outlier in age field using percentile technique (quantile()).
 
 thresold_max = dataframe['age'].quantile(0.90)
-
 
 
 ##### 7: Hopefully now, we will be abile to extract the max limit.
@@ -56,11 +52,9 @@ thresold_min = dataframe['age'].quantile(0.10)
 thresold_min
 
 
-
 ##### 9: To have visulaized outcome of the data which is below to the minimum limit.
 
 dataframe[dataframe['age']<thresold_min]
-
 
 
 ##### 10: Now, lets remove the the outliers and clean the data, as now we have max limit [thresold_max] and min limit[thresold_min].
@@ -73,8 +67,4 @@ new_dataframe=dataframe[(dataframe['age']<thresold_max) & (dataframe['age']>thre
 
 new_dataframe.shape
 new_dataframe
-
-
-
-
 
