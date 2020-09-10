@@ -4,24 +4,28 @@ Example 01
 # Exercise 1: Outlier Detection and Removal Using Percentile technique
 
 
-## 1> First we need to import two libraries :panda: and :matplotlib: on your jupyter notebook
+
+### 1> First we need to import two libraries :panda: and :matplotlib: on your jupyter notebook
 
 
 import pandas as panda
 from matplotlib import pyplot as plt
 
 
-## 2> We need to have data_set to play around. to import data_set we need to create a verible and assign data_set file. 
+
+### 2> We need to have data_set to play around. to import data_set we need to create a verible and assign data_set file. 
 
 dataframe = panda.read_csv("data_set.csv")
 
 
-## 3> head() function is used to visulize and test the data types inside the object. In short it will help you to know either your data set is valid or not.
+
+### 3> head() function is used to visulize and test the data types inside the object. In short it will help you to know either your data set is valid or not.
 
 dataframe.head()
 
 
-## 4> "shape" attribute is used to return dimentionality of dataframe in form of tuple, In simple it shows all the rows and columns of the file.
+
+### 4> "shape" attribute is used to return dimentionality of dataframe in form of tuple, In simple it shows all the rows and columns of the file.
 
 dataframe.shape
 
