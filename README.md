@@ -1,9 +1,9 @@
 # Featured-Engineering
 Example 01
 
-# Exercise 1: Outlier Detection and Removal Using Percentile technique
+## Exercise 1: Outlier Detection and Removal Using Percentile technique
 
-# 1> First we need to import two libraries :panda: and :matplotlib: on your jupyter notebook
+##### 1> First we need to import two libraries :panda: and :matplotlib: on your jupyter notebook
 
 
 import pandas as panda
